@@ -1,3 +1,61 @@
+import
+
+how to make a style component ?
+
+there are 2 fking ways yeey !
+
+
+I Varianta !
+
+import styled from "styled-components";
+
+
+const Container = styled.div`
+    btn{
+        color: red;
+    }
+`
+
+
+const ComponentaMisto = () => {
+    return (
+        <Container>
+            <btn>Hello fking World !</btn>
+        </Container>
+    )
+}
+
+export default ComponentaMisto
+
+
+II Varianta !
+
+[fisierul componentei]
+
+import * as S from "./ComponentaMisto.styles"
+
+
+
+const ComponentaMisto = () => {
+    return (
+        <S.Container>
+            <btn>Hello fking World !</btn>
+        <S.Container/>
+    )
+}
+
+export default ComponentaMisto
+
+[fisierul styles al componentei]
+
+ export const Container = styled.div`
+    btn{
+        color: red;
+    }
+`
+
+||| STATE |||
+
 Style Component - OnClick
 
 Bring State in Style Components:
