@@ -1,0 +1,34 @@
+Style Component - OnClick
+
+Bring State in Style Components:
+
+
+
+
+const TestButton = ({location}) => {
+
+/variable
+  const [isActive, setIsActive] = useState(false)
+
+
+/function
+   const toggling = () => {
+     setIsActive(current => !current)
+   }
+
+/html
+        <DropDownHeader isActive={isActive} onClick={toggling}>
+          {selectedOption || "Jump to Country"}
+        </DropDownHeader>
+
+/css
+
+.class {
+
+    transform: ${({ isActive }) => isActive ? "rotate(90deg)" : "rotate(-90deg)"};
+
+    OR (same shit)
+
+    transform: ${ props => (props.isActive ? "rotate(90deg)" : "rotate(-90deg)")};
+
+}
