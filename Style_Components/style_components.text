@@ -1,4 +1,4 @@
-import
+
 
 how to make a style component ?
 
@@ -60,6 +60,8 @@ Style Component - OnClick
 
 Bring State in Style Components:
 
+import React, { useState } from "react"
+import styled from "styled-components";
 
 
 
