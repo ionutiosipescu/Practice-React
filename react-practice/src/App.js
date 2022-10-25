@@ -13,11 +13,15 @@ import UseStateHook from "./React hooks Simplified/UseStateHook";
 import UseEffectHookOne from "./React hooks Simplified/UseEffectHookOne";
 import UseEffectHookTwo from "./React hooks Simplified/UseEffectHookTwo";
 import UseContextHook from "./React hooks Simplified/UseContext/UseContextHook";
+import UseRefHook from "./React hooks Simplified/UseRefHook";
+import UseMemoHook from "./React hooks Simplified/UseMemoHook";
+import UseCallbackHook from "./React hooks Simplified/UseCallback/UseCallbackHook";
+import UseReducerHook from "./React hooks Simplified/UseReducer/UseReducerHook";
 
 function App() {
   return (
     <div>
-      <UseContextHook />
+      <UseReducerHook />
     </div>
   );
 }
